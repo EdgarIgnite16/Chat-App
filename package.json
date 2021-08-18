@@ -1,10 +1,10 @@
 {
   "name": "chatapp",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "delay": "^5.0.0",
