@@ -1,8 +1,4 @@
 /* base css */
-* {
-    box-sizing: inherit;
-}
-
 html {
     font-size: 62.5%;  /*font size = 10 px  */
     line-height: 1.6rem;
@@ -29,15 +25,6 @@ li{
 .grid {
     max-width: 45%;
     margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /* style css */
