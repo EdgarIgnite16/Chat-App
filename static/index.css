@@ -16,10 +16,11 @@ body {
 
 ul,li{
     padding: 0;
-    color: rgb(255, 255, 255);
 }
 
 li{
+    color: rgb(241, 170, 55);
+    margin: 4px 40px;
     list-style-type: decimal;
 }
 
