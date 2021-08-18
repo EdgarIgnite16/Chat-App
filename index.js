@@ -4,12 +4,11 @@ const http = require('http');
 const server = http.createServer(app);
 const {Server} = require('socket.io');
 const io = new Server(server)
+const path = require('path')
 require('dotenv').config();
 
 
-const path = require('path')
 app.use(express.static(path.join(__dirname, 'static')));
-
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 })
