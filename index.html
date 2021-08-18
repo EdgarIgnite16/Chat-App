@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>AppChat Bản Pha Ke</title>
 </head>
 
 <body>
-    <h1>Hello world fock you </h1>
-    <ul id="messages">
-        <form id="chat-form">
-            <input type="text" id="chat-mes">
-            <button id="send-chat">Gửi</button>
-        </form>
-
-    </ul>
+    <div class="modal">
+        <div class="modal--overlay">
+            <div class="modal--main grid">
+                <h1 class="main-content">Just A Chat Box</h1>
+                <p class="sup-content">you can chat what did you want below here</p>
+                <ul id="messages">
+                    <form id="chat-form">
+                        <input type="text" id="chat-mes" class="input-form">
+                        <button id="send-chat" class="input-send">Gửi</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script>
@@ -43,21 +51,6 @@
         
         var form = document.getElementById('chatForm');
         form.reset();
-
-        // const priceSpan = document.querySelector('#bitcoin-price');
-        // let lastPrice = 0;
-        // socket.on('bitcoin-price', (data) => {
-        //     const {
-        //         price
-        //     } = data
-        //     if (price > lastPrice) {
-        //         priceSpan.className = 'up'
-        //     } else {
-        //         priceSpan.className = 'down'
-        //     }
-        //     lastPrice = price
-        //     priceSpan.textContent = `${price} USD`;
-        // })
     </script>
 </body>
 </html>
