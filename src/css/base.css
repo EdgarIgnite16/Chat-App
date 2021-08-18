@@ -16,6 +16,11 @@ body {
 ul,li{
     padding: 0;
 }
+
+li{
+    list-style-type: decimal;
+}
+
 .grid {
     width: 1200px;
     max-width: 45%;
