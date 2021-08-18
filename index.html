@@ -39,14 +39,15 @@
         })
 
         const messages = document.querySelector('#messages');
-        socket.on('user-chat', (message) => {
+        socket.on('user-chat', (data) => {
             const chatItem = document.createElement('li');
-            chatItem.textContent = `${message.name}: ${message.message}`;
+            chatItem.textContent = `${data.name}: ${data.message}`;
 
             messages.appendChild(chatItem);
         })
         var form = document.getElementById('chatForm');
         form.reset();
+
     </script>
 </body>
 </html>
