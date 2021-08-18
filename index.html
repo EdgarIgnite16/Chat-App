@@ -9,19 +9,16 @@
 </head>
 
 <body>
-    <div class="modal">
-        <div class="modal--overlay">
-            <div class="modal--main grid">
-                <h1 class="main-content">Just A Chat Box</h1>
-                <p class="sup-content">you can chat what did you want below here</p>
-                <ul id="messages"></ul>
-                <form id="chat-form">
-                    <input type="text" id="chat-mes" class="input-form">
-                    <button id="send-chat" class="input-send">Send</button>
-                </form>
-            </div>
+        <div class="modal--main grid">
+            <h1 class="main-content">Just A Chat Box</h1>
+            <p class="sup-content">you can chat what did you want below here</p>
+            <ul id="messages"></ul>
+            <form id="chat-form">
+                <input type="text" id="chat-mes" class="input-form">
+                <button id="send-chat" class="input-send">Send</button>
+
+            </form>
         </div>
-    </div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script>

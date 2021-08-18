@@ -12,6 +12,8 @@ html {
 
 body {
     background-image: url(https://wallpaperaccess.com/full/2629838.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 ul,li{
@@ -25,9 +27,8 @@ li{
 }
 
 .grid {
-    width: 1200px;
     max-width: 45%;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
 
 .grid__full-width {
@@ -40,27 +41,11 @@ li{
 }
 
 /* style css */
-.modal {
-    display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.modal--overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0 ,0 ,0 , 0.2);
-}
-
 .modal--main {
     font-size: 2rem;
     padding: 40px;
     margin-top: 50px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .input-form {
