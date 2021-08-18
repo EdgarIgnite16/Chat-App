@@ -17,7 +17,7 @@ io.on('connection', (socket) => {
     })
 })
 
-const port = process.env.port || 8080;
+let port = process.env.PORT || 80;
 server.listen(port, () => {
     console.log("App is running at the port: " + port);
 })
