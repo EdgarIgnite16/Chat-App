@@ -26,28 +26,28 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
         const socket = io();
-        const name = prompt('Tên Bạn là Gì ?')
+        const name = prompt('Whats your name?')
         const chatForm = document.querySelector('#chat-form');
         const chatMes = document.querySelector('#chat-mes');
 
         chatForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const message = chatMes.value
+            const message = chatMes.value;
             socket.emit('on-chat', {
                 name,
-                message
+                message: message
             });
             chatMes.value = '';
             document.getElementById("send-chat").scrollIntoView();
         })
 
         const messages = document.querySelector('#messages');
-        socket.on('user-chat', (data) => {
+        socket.on('user-chat', (message) => {
             const chatItem = document.createElement('li');
-            chatItem.textContent = `${data.name}: ${data.message}`;
+            chatItem.textContent = `${message.name}: ${message.message}`;
+
             messages.appendChild(chatItem);
         })
-        
         var form = document.getElementById('chatForm');
         form.reset();
     </script>
