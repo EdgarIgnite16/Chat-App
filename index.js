@@ -14,7 +14,8 @@ app.get('/', (req, res) => {
 })
 
 io.on('connection', (socket) => {
-    console.log('user connected')
+    var address = socket.request.connection.remoteAddress;
+    console.log(`user connected form => ${address}`)
     socket.on('on-chat', data => {
         io.emit('user-chat', data)
     })
