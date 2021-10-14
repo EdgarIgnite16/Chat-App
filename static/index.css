@@ -22,8 +22,8 @@ li {
 
 li {
     color: rgb(241, 170, 55);
-    margin: 4px 40px;
-    list-style-type: none;
+    margin: 8px 20px;
+    list-style-type: disclosure-closed;
 }
 
 .grid {
