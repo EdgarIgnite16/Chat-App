@@ -34,17 +34,13 @@ li {
 /* style css */
 .modal--main {
     font-size: 2rem;
-    display: flex;
     padding: 40px;
     margin-top: 50px;
-    min-height: 80vh;
+    /* min-height: 80vh; */
     min-width: 80vh;
     box-shadow: 0 0 0 8px rgb(255 255 255 / 40%);
     background-image: linear-gradient(356deg, #000000de, #00000036);
     border-radius: 8px;
-    align-content: center;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .input-form {
@@ -78,7 +74,9 @@ li {
     color: rgba(236, 208, 53, 0.808);
 }
 
-
-.message {
+.box-chat-content {
+    padding-left: 0;
+    max-height: 50vh;
     overflow-y: auto;
+    list-style: none;
 }
